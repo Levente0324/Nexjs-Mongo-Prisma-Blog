@@ -16,7 +16,12 @@ export default async function Posts() {
       <div className="flex flex-col items-center">
         <div className="border-t border-white mt-6 w-[1600px]"></div>
         {posts.map((post) => (
-          <Post id={post.id} title={post.title} content={post.content} />
+          <Post
+            key={post.id}
+            id={post.id}
+            title={post.title}
+            content={post.content}
+          />
         ))}
       </div>
     </>
